@@ -39,26 +39,33 @@
                 <h2><i class="fa-solid fa-heart-pulse"></i> LET'S GET YOU SIGNED UP!</h2>
 
                 <label for="first-name">First Name</label>
-                <input id="first-name" type="text" class="text-input" required><br>
+                <input id="first-name" type="text" class="text-input" name="first_name" required><br>
 
                 <label for="last-name">Last-name</label>
-                <input id="last-name" type="text" class="text-input" required><br>
+                <input id="last-name" type="text" class="text-input" name="last_name" required><br>
 
                 <label for="email-address">Email Address</label>
-                <input id="email-address" type="email" class="text-input" required><br>
+                <input id="email-address" type="email" class="text-input" name="email_address" required><br>
 
                 <!-- Radio buttons-->
-                <label for="road">Road</label>
-                <input id="road" type="radio" name="running_prefernence" required><br>
+                <div class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input id="road" type="radio" name="running_prefernence" value="road" required checked>
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input id="trail" type="radio" name="running_prefernence" value="trail">
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input id="both" type="radio" name="running_prefernence" value="both">
+                    </div>
+                </div>
                 
-                <label for="trail">Trail</label>
-                <input id="trail" type="radio" name="running_prefernence"><br>
-
-                <label for="both">Both</label>
-                <input id="both" type="radio" name="running_prefernence"><br>
 
                 <!-- Submit button-->
-                <input type="submit" value="Let's Run!" class="join-button">
+                <button type="submit" class="join-button">Let's Run!</button>
                 
 
 
